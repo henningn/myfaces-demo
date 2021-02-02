@@ -26,38 +26,33 @@ import javax.faces.bean.RequestScoped;
  */
 @ManagedBean(name = "helloWorld")
 @RequestScoped
-public class HelloWorldController
-{
+public class HelloWorldController {
 
-    //properties
-    private String name;
+  //properties
+  private String name;
 
-    /**
-     * default empty constructor
-     */
-    public HelloWorldController()
-    {
-    }
+  /**
+   * default empty constructor
+   */
+  public HelloWorldController() {
+  }
 
-    /**
-     * Method that is backed to a submit button of a form.
-     */
-    public String send()
-    {
-        //do real logic, return a string which will be used for the navigation system of JSF
-        return "page2.xhtml";
-    }
+  /**
+   * Method that is backed to a submit button of a form.
+   */
+  public String send() {
+    //do real logic, return a string which will be used for the navigation system of JSF
+    return "page2.xhtml";
+  }
 
-    //-------------------getter & setter
+  //-------------------getter & setter
 
-    public String getName()
-    {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
 }
