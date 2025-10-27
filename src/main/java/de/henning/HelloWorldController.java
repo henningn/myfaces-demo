@@ -18,13 +18,14 @@
  */
 package de.henning;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
+
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Named;
 
 /**
  * A typical simple backing bean, that is backed to <code>helloWorld.xhtml</code>
  */
-@ManagedBean(name = "helloWorld")
+@Named("helloWorld")
 @RequestScoped
 public class HelloWorldController {
 
